@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     return (
-        <div className='bg-[#0C0B08]'>
+        <div className='bg-[#0C0C0C]'>
         <Container className="py-8 flex items-center">
             <div>
                <Image src={logo}/>

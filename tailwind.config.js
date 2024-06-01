@@ -9,7 +9,11 @@ export default {
       'CU': [ "Cormorant Upright", "serif"],
       'OS': ["Open Sans", "sans-serif"],
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'bg-img': "url('src/assets/bg.jpg')",
+      }
+    },
   },
   plugins: [],
 }
