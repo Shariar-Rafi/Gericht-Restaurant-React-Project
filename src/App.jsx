@@ -1,14 +1,11 @@
 import React from 'react'
+import Home from './componensts/page/Home'
 
 const App = () => {
   return (
     <>
-      <div className='bg-slate-100 text-center font-CU'>
-        Font 1
-      </div>
-      <div className='bg-slate-100 text-center font-OS'>
-        Font 2
-      </div>
+    <Home/>
+
 
     </>
 
