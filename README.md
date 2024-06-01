@@ -11,7 +11,11 @@
 2. HTML/CSS/JS: For structuring the user interface and styling the application.
 3. OpenWeatherMap API: For fetching weather data and forecasts.
 
+<b>Privew Project:</b>
+https://gericht-restaurant-2024.vercel.app/
+
+
 <b>Screenshot:</b>
 
-<img src="https://github.com/Shariar-Rafi/Weather-App-Using-React-JS/blob/main/src/assets/app.jpg" alt="Screenshots/app.jpg" >
+<img src="https://github.com/Shariar-Rafi/Gericht-Restaurant-React-Project/blob/main/src/assets/ss.jpg" alt="src/assets/ss.jpg" >
 
