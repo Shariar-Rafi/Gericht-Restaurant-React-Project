@@ -1,7 +1,7 @@
 import React from 'react'
 import Container from './layer/Container'
 import Image from './layer/Image'
-import spone from '../assets/spone.png'
+import spoon from '../assets/spoon.png'
 import banner01 from '../assets/banner01.jpg'
 import Button from './layer/Button'
 import { Link } from 'react-router-dom'
@@ -16,7 +16,7 @@ const Banner = () => {
         <div className='h-[736px] flex  '>
             <div className="left flex flex-col w-[453px] my-auto ml-[158px] mr-[180px]">
                 <p className='text-[23px] text-[#FFF] font-CU leading-7 tracking-[0.92px] capitalize font-bold'>Chase the new Flavour</p>
-                <p className='mt-2'><Image src={spone} alt={"spone"} /></p>
+                <p className='mt-2'><Image src={spoon} alt={"spoon"} /></p>
                 <h2  className='text-[90px] text-[#DCCA87] font-CU leading-[117px]  capitalize font-bold '>
                 The key to Fine dining
                 </h2>

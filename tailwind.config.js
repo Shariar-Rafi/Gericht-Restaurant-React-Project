@@ -12,6 +12,7 @@ export default {
     extend: {
       backgroundImage: {
         'bg-img': "url('https://i.ibb.co/1ngVR61/bg.jpg')",
+        'home-bg': "url('https://i.ibb.co/4Nn0mrD/home-bg.jpg')",
       }
     },
   },

@@ -1,16 +1,18 @@
 import React from 'react'
 import Banner from '../Banner'
-import bg from "../../assets/bg.jpg"
 import About from '../About'
 import Reservations from '../Reservations'
+import BarMenu from '../BarMenu'
 
 const Home = () => {
   return (
-    <div className='bg-bg-img bg-cover'>
-      <Banner/>
-      <About/>
-      <Reservations/>
+    <div className="div bg-home-bg z-10">
+        <Banner />
+        <About />
+        <Reservations />
+        <BarMenu/>
     </div>
+
   )
 }
 
