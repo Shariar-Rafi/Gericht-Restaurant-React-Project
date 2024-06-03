@@ -4,16 +4,20 @@ import About from '../About'
 import Reservations from '../Reservations'
 import BarMenu from '../BarMenu'
 import Review from '../Review'
+import SpecialMenu from '../SpecialMenu'
 
 
 const Home = () => {
   return (
-    <div className="div bg-home-bg z-10">
+    <div className=" bg-slate-900"> 
+      {/* className="div bg-home-bg z-10  bg-repeat-y" */}
         <Banner />
         <About />
         <Reservations />
         <BarMenu/>
+        <SpecialMenu/>
         <Review/>
+        
     </div>
 
   )
