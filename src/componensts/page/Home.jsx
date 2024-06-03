@@ -3,6 +3,8 @@ import Banner from '../Banner'
 import About from '../About'
 import Reservations from '../Reservations'
 import BarMenu from '../BarMenu'
+import Review from '../Review'
+
 
 const Home = () => {
   return (
@@ -10,7 +12,8 @@ const Home = () => {
         <Banner />
         <About />
         <Reservations />
-        <BarMenu/>
+        {/* <BarMenu/> */}
+        <Review/>
     </div>
 
   )
