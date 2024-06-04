@@ -2,6 +2,7 @@ import React from 'react'
 import Container from './layer/Container'
 import Image from './layer/Image'
 import spoon from '../assets/spoon.png'
+import fork from '../assets/fork.png'
 import Button from './layer/Button'
 
 
@@ -12,7 +13,11 @@ const Reservations = () => {
         <div className='w-[1364px] bg-[#0C0C0C] border text-center py-12 px-8 '>
           <div className='header  m-auto  '>
             <p className='text-[#FFFFFF] font-CU text-[23px] font-bold leading-[30px]'>Reservations</p>
-            <p className='mt-2 flex justify-center'><Image src={spoon} alt={"spoon"} /></p>
+            <p className='mt-2 flex justify-center gap-x-2'>
+              <Image className="rotate-180" src={fork} alt={"fork"} />
+              <Image src={spoon} alt={"spoon"} />
+
+            </p>
             <p className='text-[#DCCA87] font-CU text-[64px] font-semibold leading-[83px] capitalize'>Book A Table</p>
           </div>
 
