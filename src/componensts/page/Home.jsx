@@ -6,6 +6,7 @@ import BarMenu from '../BarMenu'
 import Review from '../Review'
 import SpecialMenu from '../SpecialMenu'
 import ChefWord from '../ChefWord'
+import Laurels from '../Laurels'
 
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
         <SpecialMenu/>
         <ChefWord/>
         <Review/>
+        <Laurels/>
         
     </div>
 
