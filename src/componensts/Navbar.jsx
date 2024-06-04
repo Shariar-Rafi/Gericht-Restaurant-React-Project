@@ -14,7 +14,7 @@ const Navbar = () => {
                <Image src={logo}/>
             </div>
             <div className='ml-[437px]'>
-                <ul className='flex gap-x-8 z-10 items-center'>
+                <ul className='flex gap-x-8 z-10 items-center text-white text-base font-OS'>
                     <Listitem to={`/`} text={`Home`}/>
                     <Listitem to={`/`} text={`Pages`}/>
                     <Listitem to={`/`} text={`Contact Us`}/>

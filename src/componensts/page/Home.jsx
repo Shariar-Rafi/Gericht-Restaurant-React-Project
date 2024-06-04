@@ -9,7 +9,7 @@ import SpecialMenu from '../SpecialMenu'
 
 const Home = () => {
   return (
-    <div className=" bg-slate-900"> 
+    <div className="bg-home-bg z-10  bg-repeat-y"> 
       {/* className="div bg-home-bg z-10  bg-repeat-y" */}
         <Banner />
         <About />
