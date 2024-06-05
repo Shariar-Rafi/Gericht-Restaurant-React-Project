@@ -10,6 +10,7 @@ import Laurels from '../Laurels'
 import Blogs from '../Blogs'
 import Video from '../Video'
 import Photogallery from '../Photogallery'
+import Newsletter from '../Newsletter'
 
 
 const Home = () => {
@@ -27,6 +28,7 @@ const Home = () => {
         <Laurels/>
         <Blogs/>
         <Photogallery/>
+        <Newsletter/>
     </div>
 
   )
