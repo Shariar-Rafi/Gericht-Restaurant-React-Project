@@ -8,6 +8,7 @@ import SpecialMenu from '../SpecialMenu'
 import ChefWord from '../ChefWord'
 import Laurels from '../Laurels'
 import Blogs from '../Blogs'
+import Video from '../Video'
 
 
 const Home = () => {
@@ -21,6 +22,7 @@ const Home = () => {
         <SpecialMenu/>
         <ChefWord/>
         <Review/>
+        <Video/>
         <Laurels/>
         <Blogs/>
     </div>
