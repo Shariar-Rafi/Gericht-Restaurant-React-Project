@@ -9,7 +9,7 @@ import Button from './layer/Button'
 const Newsletter = () => {
   return (
     <div className='pt-[113px] h-[334px]'>
-n      <Container className='flex justify-center items-center'>
+      <Container className='flex justify-center items-center'>
 
         <div className='bg-[#0c0c0c] main w-[1300px] border border-[#dcca87] border-opacity-20'>
         
