@@ -6,7 +6,7 @@ import { Player } from 'video-react'
 const Video = () => {
     return (
 
-        <div className='w-full'>
+        <div>
             <Player
                 poster={thumbnail}
 

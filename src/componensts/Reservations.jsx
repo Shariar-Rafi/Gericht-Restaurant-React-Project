@@ -6,7 +6,10 @@ import fork from '../assets/fork.png'
 import Button from './layer/Button'
 
 
+
+
 const Reservations = () => {
+
   return (
     <div className='h-[959px] flex justify-center items-center ' >
       <Container>
@@ -14,8 +17,8 @@ const Reservations = () => {
           <div className='header  m-auto  '>
             <p className='text-[#FFFFFF] font-CU text-[23px] font-bold leading-[30px]'>Reservations</p>
             <p className='mt-2 flex justify-center gap-x-2'>
-              <Image className="rotate-180" src={fork} alt={"fork"} />
-              <Image src={spoon} alt={"spoon"} />
+              <Image className="rotate-180 cursor-auto" src={fork} alt={"fork"} />
+              <Image className="cursor-auto" src={spoon} alt={"spoon"} />
 
             </p>
             <p className='text-[#DCCA87] font-CU text-[64px] font-semibold leading-[83px] capitalize'>Book A Table</p>
@@ -25,6 +28,7 @@ const Reservations = () => {
           <div className='my-16 flex gap-x-8 justify-center'>
 
             <div className='border bg-transparent border-[#AAAAAA] text-[#767676] lg:text-sm text-xs w-[412px]'>
+
 
               <select className='outline-none text-[#AAAAAA] my-4 ml-4 flex justify-start bg-transparent'>
 
@@ -37,7 +41,8 @@ const Reservations = () => {
                 <option className=' bg-[#0C0B08]' value="Featured">
                   3 person</option>
 
-              </select>
+              </select> 
+
             </div>
 
             <div className='border bg-transparent border-[#AAAAAA] text-[#767676] lg:text-sm text-xs w-[412px]'>
