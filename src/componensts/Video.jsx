@@ -1,12 +1,13 @@
 import React from 'react'
-import vid from "../Videos/restaurant.mp4"
-// import thumbnail from "../assets/thumbnail.jpg"
+import vid02 from "../video/restaurant.mp4"
 
 const Video = () => {
     return (
 
-        <div className='w-full'>
-            <video src={vid}  autoPlay="true"/>
+        <div className='w-full object-cover'>
+            <video>
+                <source src={vid02} type="video/mp4" />
+            </video>
         </div>
     )
 }
