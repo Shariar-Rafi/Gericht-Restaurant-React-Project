@@ -9,6 +9,7 @@ import ChefWord from '../ChefWord'
 import Laurels from '../Laurels'
 import Blogs from '../Blogs'
 import Video from '../Video'
+import Photogallery from '../Photogallery'
 
 
 const Home = () => {
@@ -25,6 +26,7 @@ const Home = () => {
         <Video/>
         <Laurels/>
         <Blogs/>
+        <Photogallery/>
     </div>
 
   )
