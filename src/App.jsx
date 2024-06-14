@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import RootLayout from "./componensts/layer/RootLayout";
 import Home from "./componensts/page/Home";
+import ContactUS from "./componensts/page/ContactUS";
 
 
 
@@ -20,6 +21,7 @@ const App = () => {
         element={<RootLayout/>}
       >
         <Route index element={<Home/>} ></Route>
+        <Route path='/contact' element={<ContactUS/>} ></Route>
 
       </Route>
     )
