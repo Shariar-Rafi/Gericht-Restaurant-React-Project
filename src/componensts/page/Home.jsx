@@ -15,7 +15,7 @@ import Newsletter from '../Newsletter'
 
 const Home = () => {
   return (
-    <div className="bg-home-bg z-10 bg-repeat-x"> 
+    <div className="bg-home-bg z-10 bg-repeat"> 
       {/* className="div bg-home-bg z-10  bg-repeat-y" */}
         <Banner />
         <About />
