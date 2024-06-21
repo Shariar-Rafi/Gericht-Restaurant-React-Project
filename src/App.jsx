@@ -9,6 +9,8 @@ import {
 import RootLayout from "./componensts/layer/RootLayout";
 import Home from "./componensts/page/Home";
 import ContactUS from "./componensts/page/ContactUS";
+import Service from "./componensts/page/Service";
+import About from "./componensts/page/About";
 
 
 
@@ -21,7 +23,9 @@ const App = () => {
         element={<RootLayout/>}
       >
         <Route index element={<Home/>} ></Route>
-        <Route path='/contact' element={<ContactUS/>} ></Route>
+        <Route path='/service' element={<Service/>} ></Route>
+        <Route path='/about-us' element={<About/>} ></Route>
+        <Route path='/contact-us' element={<ContactUS/>} ></Route>
 
       </Route>
     )

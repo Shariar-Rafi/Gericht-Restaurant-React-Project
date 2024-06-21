@@ -4,7 +4,7 @@ import AboutBanner from '../layer/AboutBanner'
 const ContactUS = () => {
   return (
     <div className="bg-home-bg z-10 bg-repeat">
-        <AboutBanner text="What We offer"/>
+        <AboutBanner text="Contact Us"/>
     </div>
   )
 }
