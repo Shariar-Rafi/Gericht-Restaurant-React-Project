@@ -17,7 +17,7 @@ const Navbar = () => {
                 <ul className='flex gap-x-8 z-10 items-center text-white text-base font-OS font-medium'>
                     <Listitem className="hover:text-[#DCCA87]" to="/" text="Home"/>
                     <Listitem className="hover:text-[#DCCA87]" to="/" text="Pages"/>
-                    <Listitem className="hover:text-[#DCCA87]" to="/" text="Contact Us"/>
+                    <Listitem className="hover:text-[#DCCA87]" to="/contact" text="Contact Us"/>
                     <Listitem className="hover:text-[#DCCA87]" to="/" text="Blog"/>
                     <Listitem className="hover:text-[#DCCA87]" to="/" text="Landing"/>
                 </ul>
