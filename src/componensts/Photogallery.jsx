@@ -77,7 +77,7 @@ const Photogallery = () => {
 
     var settings = {
         infinite: true,
-        slidesToShow: 4,
+        slidesToShow: 6,
         slidesToScroll: 1,
         dots: false,
         autoplay: true,
@@ -188,6 +188,20 @@ const Photogallery = () => {
 
         <div className="relative w-[301px] h-[550px] px-5">
         <Image src={pg1} alt="Image" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-0 hover:bg-opacity-70 transition-all duration-300 group">
+            <FaInstagram className="text-white w-12 h-12 opacity-0 group-hover:opacity-100 transition-all duration-300" />
+        </div>
+        </div>
+
+        <div className="relative w-[301px] h-[550px] px-5">
+        <Image src={pg3} alt="Image" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-0 hover:bg-opacity-70 transition-all duration-300 group">
+            <FaInstagram className="text-white w-12 h-12 opacity-0 group-hover:opacity-100 transition-all duration-300" />
+        </div>
+        </div>
+
+        <div className="relative w-[301px] h-[550px] px-5">
+        <Image src={pg4} alt="Image" className="w-full h-full object-cover" />
         <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-0 hover:bg-opacity-70 transition-all duration-300 group">
             <FaInstagram className="text-white w-12 h-12 opacity-0 group-hover:opacity-100 transition-all duration-300" />
         </div>

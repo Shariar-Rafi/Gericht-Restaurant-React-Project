@@ -16,8 +16,8 @@ const SpecialMenu = () => {
             Menu that fits you palatte
           </p>
           <div className="flex justify-center  gap-x-2">
-            <Image className="rotate-180" src={fork} />
-            <Image src={spoon} />
+            <Image className="rotate-180 cursor-auto" src={fork} />
+            <Image className="cursor-auto" src={spoon} />
           </div>
           <h3 className="text-[#dcca87] font-CU text-[64px] mb-16 font-semibold leading-[83px]">
             Today’s Special

@@ -6,11 +6,11 @@ import spoon from '../assets/spoon.png'
 import Blog1 from '../assets/Blog1.jpg'
 import Blog2 from '../assets/Blog2.jpg'
 import Blog3 from '../assets/Blog3.jpg'
-import { Link } from 'react-router-dom'
+import Blog4 from '../assets/Blog4.jpg'
 import Button from './layer/Button'
 import Slider from 'react-slick'
 import { FaArrowRightLong, FaArrowLeftLong } from "react-icons/fa6";
-import "./Blog.css"
+import BlogSlider from './BlogSlider'
 
 
 
@@ -18,7 +18,7 @@ function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
-      className='w-16 h-16 absolute right-[10px] top-1/2 translate-y-[-50%] rounded-full border !flex justify-center items-center cursor-pointer'
+      className='w-16 h-16 absolute right-5 top-1/2 translate-y-[-50%] rounded-full border !flex justify-center items-center cursor-pointer'
       style={{ ...style, display: "block", }}
       onClick={onClick}
     >
@@ -32,7 +32,7 @@ function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
-      className='w-16 h-16 absolute left-[10px] top-1/2 translate-y-[-50%] rounded-full border !flex justify-center items-center z-50 cursor-pointer'
+      className='w-16 h-16 absolute left-5 top-1/2 translate-y-[-50%] rounded-full border !flex justify-center items-center z-50 cursor-pointer'
       style={{ ...style, display: "block", }}
       onClick={onClick}
     >
@@ -42,33 +42,7 @@ function SamplePrevArrow(props) {
   );
 }
 
-function SampleNextArrow2(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className='lg:w-16 lg:h-16 w-10 h-10 absolute lg:right-5 right-1 top-1/2 translate-y-[-50%] rounded-full bg-[#c3c3c2] !flex justify-center items-center cursor-pointer'
-      style={{ ...style, display: "block", }}
-      onClick={onClick}
-    >
-      <FaArrowRightLong className='text-white' />
 
-    </div>
-  );
-}
-
-function SamplePrevArrow2(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className='lg:w-16 lg:h-16 w-10 h-10 absolute lg:left-5 left-1 top-1/2 translate-y-[-50%] rounded-full bg-[#c3c3c2] !flex justify-center items-center z-50 cursor-pointer'
-      style={{ ...style, display: "block", }}
-      onClick={onClick}
-    >
-      <FaArrowLeftLong className='text-white' />
-
-    </div>
-  );
-}
 
 
 
@@ -87,49 +61,6 @@ const Blogs = () => {
     autoplaySpeed: 6000,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-
-
-    responsive: [
-      {
-        breakpoint: 1080,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        }
-      },
-      {
-        breakpoint: 750,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        }
-      }, {
-        breakpoint: 700,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-
-          nextArrow: <SampleNextArrow2 />,
-          prevArrow: <SamplePrevArrow2 />,
-
-        }
-      }
-    ]
-
 
   };
 
@@ -154,125 +85,64 @@ const Blogs = () => {
 
           {/* <div className='main flex justify-center items-center gap-x-8'> */}
 
-            <Slider {...settings}>
-
-              <div className='group'>
-                <Image className='cursor-auto' src={Blog1} />
-                <div className='flex justify-between w-[410px] mt-6'>
-                  <p className='text-[#FAFAFA] font-OS text-[16px] leading-7 '>16 Apr 2021</p>
-                  <p className='text-[#FAFAFA] font-OS text-[16px] leading-7'>- Annalisa L</p>
-                </div>
-                <div className='w-[412px] '>
-                  {/* <div className='group'> */}
-
-                  <p className='text-[#DCCA87] font-CU text-[32px] leading-[42px] capitalize
-              mt-8 tracking-[1.28px] relative group inline-block'>tips for prepping and caring<span className="absolute -bottom-[0.5px] left-0 w-0 h-[1px] bg-[#DCCA87] transition-all duration-300 group-hover:w-full"></span></p>
-                  <p className='text-[#DCCA87] font-CU text-[32px] leading-[42px] capitalize tracking-[1.28px] relative group inline-block'>
-                    for your grill
-                    <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#DCCA87] transition-all duration-700 group-hover:w-full"></span>
-                  </p>
-                  {/* </div> */}
-
-                  <p className='font-OS text-[#AAA] mt-8 mb-8 leading-7 tracking-[0.64px] text-base'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
+          <Container className="w-[1360px]">
+            <div>
+              <Slider {...settings}>
+                <div>
+                  <BlogSlider
+                    className="mx-auto"
+                    src={Blog1}
+                    date="16 Apr 2021"
+                    writer="- Annalisa L"
+                    title1="tips for prepping and caring"
+                    title2="for your grill"
+                    details="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in."
+                    to="/blogs-detail"
+                  />
                 </div>
 
-                <Link className='text-[#DCCA87] font-CU text-base leading-7 font-bold tracking-[0.64px]' >Read More</Link>
-
-
-              </div>
-
-
-              <div className='group'>
-                <Image className='cursor-auto' src={Blog2} />
-                <div className='flex justify-between w-[410px] mt-6'>
-                  <p className='text-[#FAFAFA] font-OS text-[16px] leading-7 '>23 May 2021</p>
-                  <p className='text-[#FAFAFA] font-OS text-[16px] leading-7'>-John Micheal</p>
-                </div>
-                <div className='w-[412px]'>
-
-                  <p className='text-[#DCCA87]  font-CU text-[32px] leading-[42px] capitalize
-              mt-8 tracking-[1.28px] relative group inline-block'>summer cocktails and <span className="absolute -bottom-[0.5px] left-0 w-0 h-[1px] bg-[#DCCA87] transition-all duration-300 group-hover:w-full"></span></p>
-                  <p className='text-[#DCCA87]  font-CU text-[32px] leading-[42px] capitalize
-              tracking-[1.28px] relative group inline-block'>mocktails<span className="absolute -bottom-[0.5px] left-0 w-0 h-[1px] bg-[#DCCA87] transition-all duration-700 group-hover:w-full"></span></p>
-
-                  <p className='font-OS text-[#AAA] mt-8 mb-8 leading-7 tracking-[0.64px] text-base'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
+                <div>
+                  <BlogSlider
+                    src={Blog2}
+                    className="mx-auto"
+                    date="23 May 2021"
+                    writer="-John Micheal"
+                    title1="summer cocktails and "
+                    title2="mocktails"
+                    details="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in."
+                    to="/blogs-detail"
+                  />
                 </div>
 
-                <Link className='text-[#DCCA87] font-CU text-base leading-7 font-bold tracking-[0.64px]' >Read More</Link>
-
-
-              </div>
-
-
-              <div className='group'>
-                <Image className='cursor-auto' src={Blog3} />
-                <div className='flex justify-between w-[410px] mt-6'>
-                  <p className='text-[#FAFAFA] font-OS text-[16px] leading-7 '>06 Aug 2021</p>
-                  <p className='text-[#FAFAFA] font-OS text-[16px] leading-7'>-Fred W</p>
+                <div>
+                  <BlogSlider
+                    src={Blog3}
+                    className="mx-auto"
+                    date="06 Aug 2021"
+                    writer="-Fred W"
+                    title1="easy cooking for college "
+                    title2="students"
+                    details="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in."
+                    to="/blogs-detail"
+                  />
                 </div>
-                <div className='w-[412px]'>
-
-                  <p className='text-[#DCCA87]  font-CU text-[32px] leading-[42px] capitalize
-              mt-8 tracking-[1.28px] relative group inline-block'>easy cooking for college<span className="absolute -bottom-[0.5px] left-0 w-0 h-[1px] bg-[#DCCA87] transition-all duration-300 group-hover:w-full"></span></p>
-                  <p className='text-[#DCCA87]  font-CU text-[32px] leading-[42px] capitalize
-              tracking-[1.28px] relative group inline-block'>students<span className="absolute -bottom-[0.5px] left-0 w-0 h-[1px] bg-[#DCCA87] transition-all duration-700 group-hover:w-full"></span></p>
-
-                  <p className='font-OS text-[#AAA] mt-8 mb-8 leading-7 tracking-[0.64px] text-base'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
-                </div>
-
-                <Link className='text-[#DCCA87] font-CU text-base leading-7 font-bold tracking-[0.64px]' >Read More</Link>
-
-
-              </div>
-
-              <div className='group'>
-                <Image className='cursor-auto' src={Blog1} />
-                <div className='flex justify-between w-[410px] mt-6'>
-                  <p className='text-[#FAFAFA] font-OS text-[16px] leading-7 '>16 Apr 2021</p>
-                  <p className='text-[#FAFAFA] font-OS text-[16px] leading-7'>- Annalisa L</p>
-                </div>
-                <div className='w-[412px] '>
-                  {/* <div className='group'> */}
-
-                  <p className='text-[#DCCA87] font-CU text-[32px] leading-[42px] capitalize
-            mt-8 tracking-[1.28px] relative group inline-block'>tips for prepping and caring<span className="absolute -bottom-[0.5px] left-0 w-0 h-[1px] bg-[#DCCA87] transition-all duration-300 group-hover:w-full"></span></p>
-                  <p className='text-[#DCCA87] font-CU text-[32px] leading-[42px] capitalize tracking-[1.28px] relative group inline-block'>
-                    for your grill
-                    <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#DCCA87] transition-all duration-700 group-hover:w-full"></span>
-                  </p>
-                  {/* </div> */}
-
-                  <p className='font-OS text-[#AAA] mt-8 mb-8 leading-7 tracking-[0.64px] text-base'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
+                <div>
+                  <BlogSlider
+                    src={Blog4}
+                    className="mx-auto"
+                    date="06 Mar 2020"
+                    writer="- Andrial M"
+                    title1="How to make your food "
+                    title2="Photographs look aesthetic"
+                    details="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in."
+                    to="/blogs-detail"
+                  />
                 </div>
 
-                <Link className='text-[#DCCA87] font-CU text-base leading-7 font-bold tracking-[0.64px]' >Read More</Link>
+              </Slider>
+            </div>
 
-
-              </div>
-
-              <div className='group' >
-                <Image className='cursor-auto' src={Blog2} />
-                <div className='flex justify-between w-[410px] mt-6'>
-                  <p className='text-[#FAFAFA] font-OS text-[16px] leading-7 '>23 May 2021</p>
-                  <p className='text-[#FAFAFA] font-OS text-[16px] leading-7'>-John Micheal</p>
-                </div>
-                <div className='w-[412px]'>
-
-                  <p className='text-[#DCCA87]  font-CU text-[32px] leading-[42px] capitalize
-            mt-8 tracking-[1.28px] relative group inline-block'>summer cocktails and <span className="absolute -bottom-[0.5px] left-0 w-0 h-[1px] bg-[#DCCA87] transition-all duration-300 group-hover:w-full"></span></p>
-                  <p className='text-[#DCCA87]  font-CU text-[32px] leading-[42px] capitalize
-            tracking-[1.28px] relative group inline-block'>mocktails<span className="absolute -bottom-[0.5px] left-0 w-0 h-[1px] bg-[#DCCA87] transition-all duration-700 group-hover:w-full"></span></p>
-
-                  <p className='font-OS text-[#AAA] mt-8 mb-8 leading-7 tracking-[0.64px] text-base'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
-                </div>
-
-                <Link className='text-[#DCCA87] font-CU text-base leading-7 font-bold tracking-[0.64px]' >Read More</Link>
-
-
-              </div>
-
-
-            </Slider>
+          </Container>
 
 
 
