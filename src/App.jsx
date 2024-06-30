@@ -12,6 +12,7 @@ import ContactUS from "./componensts/page/ContactUS";
 import Service from "./componensts/page/Service";
 import About from "./componensts/page/About";
 import ErrorPage from "./componensts/page/ErrorPage";
+import Faq from "./componensts/Faq";
 
 
 const App = () => {
@@ -27,6 +28,7 @@ const App = () => {
         <Route path='/service' element={<Service/>} ></Route>
         <Route path='/about-us' element={<About/>} ></Route>
         <Route path='/contact-us' element={<ContactUS/>} ></Route>
+        <Route path='/faq' element={<Faq/>} ></Route>
 
       </Route>
     )
