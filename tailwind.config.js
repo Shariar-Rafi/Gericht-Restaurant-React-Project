@@ -13,6 +13,7 @@ export default {
       backgroundImage: {
         'bg-img': "url('https://i.ibb.co/1ngVR61/bg.jpg')",
         'home-bg': "url('https://i.ibb.co/4Nn0mrD/home-bg.jpg')",
+        'error-bg': "url('https://i.ibb.co/c2c0mWr/404.jpg')",
       }
     },
   },

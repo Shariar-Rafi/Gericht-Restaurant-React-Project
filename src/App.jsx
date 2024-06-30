@@ -11,8 +11,7 @@ import Home from "./componensts/page/Home";
 import ContactUS from "./componensts/page/ContactUS";
 import Service from "./componensts/page/Service";
 import About from "./componensts/page/About";
-
-
+import ErrorPage from "./componensts/page/ErrorPage";
 
 
 const App = () => {
@@ -21,6 +20,8 @@ const App = () => {
       <Route
         path="/"
         element={<RootLayout/>}
+        errorElement={<ErrorPage />}
+
       >
         <Route index element={<Home/>} ></Route>
         <Route path='/service' element={<Service/>} ></Route>

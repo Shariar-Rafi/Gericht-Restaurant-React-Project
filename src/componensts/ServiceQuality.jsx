@@ -24,7 +24,7 @@ const ServiceQuality = () => {
       
         </Link>
 
-        <Link>
+        <Link to="/contact-us">
             <button className='w-[137px] py-2 text-black bg-[#DCCA87] font-OS border border-transparent hover:border-[#DCCA87] hover:bg-transparent transition-all duration-300 hover:text-[#fff]'>Contact Us</button>
       
         </Link>
