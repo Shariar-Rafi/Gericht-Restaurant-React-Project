@@ -18,7 +18,7 @@ const ChefWord = () => {
 
                             </div>
                             <div>
-                                <Image src={chef01} className="z-20 absolute top-6 right-6" />
+                                <Image src={chef01} className="z-20 absolute top-6 right-6 cursor-auto" />
                             </div>
                             <div className="bottom size-[435px] bg-[#DCCA87] absolute bottom-0 left-0">
 

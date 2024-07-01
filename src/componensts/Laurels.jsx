@@ -20,16 +20,16 @@ const Laurels = () => {
           <div className='main flex gap-x-[135px]'>
           <div className='left ml-[156px] w-[634px] flex flex-col justify-center'>
             <h3 className='font-CU text-[23px] text-[#FFF] font-semibold leading-[30px] capitalize'>Awards & recognition</h3>
-            <div className="flex  gap-x-2">
-            <Image className="rotate-180" src={fork} />
-            <Image src={spoon} />
+            <div className="flex py-2 gap-x-2">
+            <Image className="rotate-180 cursor-auto" src={fork} />
+            <Image className="cursor-auto" src={spoon} />
           </div>
           <p className='font-CU text-[#DCCA87] text-[64px] font-semibold leading-[83px] capitalize'>Our Laurels</p>
         {/* ================================================= */}
         
         <div className='flex flex-wrap gap-x-8'>
         <div className='pt-[64px] flex gap-x-8 w-[301px]'>
-          <Image src={L2}/>
+          <Image className="cursor-auto" src={L2}/>
           <div className=''> 
             <h4 className='font-CU text-[#DCCA87] text-[23px] font-semibold leading-[30px] '>
             Bib Gourmond
@@ -41,7 +41,7 @@ const Laurels = () => {
         </div>
 
         <div className='pt-[64px] flex gap-x-8 w-[301px]'>
-          <Image src={L1}/>
+          <Image className="cursor-auto" src={L1}/>
           <div className=''> 
             <h4 className='font-CU text-[#DCCA87] text-[23px] font-semibold leading-[30px] '>
             Rising Star
@@ -53,7 +53,7 @@ const Laurels = () => {
         </div>
 
         <div className='pt-[64px] flex gap-x-8 w-[301px]'>
-          <Image src={L5}/>
+          <Image className="cursor-auto" src={L5}/>
           <div className=''> 
             <h4 className='font-CU text-[#DCCA87] text-[23px] font-semibold leading-[30px] '>
             AA Hospitality 
@@ -65,7 +65,7 @@ const Laurels = () => {
         </div>
 
         <div className='pt-[64px] flex gap-x-8 w-[301px]'>
-          <Image src={L3}/>
+          <Image className="cursor-auto" src={L3}/>
           <div className=''> 
             <h4 className='font-CU text-[#DCCA87] text-[23px] font-semibold leading-[30px] '>
             Outstanding Chef
@@ -84,8 +84,8 @@ const Laurels = () => {
           </div>
         {/* ============================================= */}
           <div className='right mr-[156px] relative '>
-            <Image src={Lcover}/>
-            <Image className='absolute bottom-0 translate-x-[-20%] ' src={GW}/>
+            <Image className="cursor-auto" src={Lcover}/>
+            <Image className='absolute cursor-auto bottom-0 translate-x-[-20%] ' src={GW}/>
           </div>
 
           </div>

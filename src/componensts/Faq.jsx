@@ -58,7 +58,7 @@ const Faq = () => {
 
               </div>
               <div>
-                <Image src={lemonade} className="z-20 absolute top-6 right-6" />
+                <Image src={lemonade} className="z-20 absolute top-6 right-6 cursor-auto" />
               </div>
               <div className="bottom w-[435px] h-[383px] bg-[#DCCA87] absolute top-[265px] left-0">
 

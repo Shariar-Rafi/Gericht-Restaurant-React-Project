@@ -13,6 +13,8 @@ import Service from "./componensts/page/Service";
 import About from "./componensts/page/About";
 import ErrorPage from "./componensts/page/ErrorPage";
 import Faq from "./componensts/Faq";
+import OurChef from "./componensts/page/OurChef";
+import ChefDetails from "./componensts/page/ChefDetails";
 
 
 const App = () => {
@@ -21,7 +23,7 @@ const App = () => {
       <Route
         path="/"
         element={<RootLayout/>}
-        errorElement={<ErrorPage />}
+        // errorElement={<ErrorPage />}
 
       >
         <Route index element={<Home/>} ></Route>
@@ -29,6 +31,8 @@ const App = () => {
         <Route path='/about-us' element={<About/>} ></Route>
         <Route path='/contact-us' element={<ContactUS/>} ></Route>
         <Route path='/faq' element={<Faq/>} ></Route>
+        <Route path='/our-chef' element={<OurChef/>} ></Route>
+        <Route path='/chef-details' element={<ChefDetails/>} ></Route>
 
       </Route>
     )
