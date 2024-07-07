@@ -17,6 +17,7 @@ import OurChef from "./componensts/page/OurChef";
 import ChefDetails from "./componensts/page/ChefDetails";
 import Blog from "./componensts/page/Blog";
 import BlogsDetail from "./componensts/page/BlogsDetail";
+import ComingSoon from "./componensts/page/ComingSoon";
 
 
 const App = () => {
@@ -37,6 +38,7 @@ const App = () => {
         <Route path='/chef-details' element={<ChefDetails/>} ></Route>
         <Route path="/our-blogs" element={<Blog/>} ></Route>   
         <Route path="/blogs-detail" element={<BlogsDetail/>} ></Route> 
+        <Route path="/ComingSoon" element={<ComingSoon/>} ></Route>
 
       </Route>
     )
