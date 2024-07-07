@@ -18,7 +18,7 @@ const Navbar = () => {
                     <Listitem className="hover:text-[#DCCA87]" to="/" text="Home"/>
                     <Listitem className="hover:text-[#DCCA87]" to="/" text="Pages"/>
                     <Listitem className="hover:text-[#DCCA87]" to="/contact-us" text="Contact Us"/>
-                    <Listitem className="hover:text-[#DCCA87]" to="/" text="Blog"/>
+                    <Listitem className="hover:text-[#DCCA87]" to="/our-blogs" text="Blog"/>
                     <Listitem className="hover:text-[#DCCA87]" to="/service" text="Service"/>
                 </ul>
             </div>

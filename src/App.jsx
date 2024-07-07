@@ -15,6 +15,8 @@ import ErrorPage from "./componensts/page/ErrorPage";
 import Faq from "./componensts/Faq";
 import OurChef from "./componensts/page/OurChef";
 import ChefDetails from "./componensts/page/ChefDetails";
+import Blog from "./componensts/page/Blog";
+import BlogsDetail from "./componensts/page/BlogsDetail";
 
 
 const App = () => {
@@ -33,6 +35,8 @@ const App = () => {
         <Route path='/faq' element={<Faq/>} ></Route>
         <Route path='/our-chef' element={<OurChef/>} ></Route>
         <Route path='/chef-details' element={<ChefDetails/>} ></Route>
+        <Route path="/our-blogs" element={<Blog/>} ></Route>   
+        <Route path="/blogs-detail" element={<BlogsDetail/>} ></Route> 
 
       </Route>
     )
