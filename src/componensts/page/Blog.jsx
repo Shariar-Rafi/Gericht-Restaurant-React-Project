@@ -7,8 +7,8 @@ import Sidebar from '../Sidebar';
 import BlogTwo from '../BlogTwo';
 
 const Blog = () => {
-  const [activeTab, setActiveTab] = useState('With-Sidebar');
-  const [breadcrumbText, setBreadcrumbText] = useState('With-Sidebar');
+  const [activeTab, setActiveTab] = useState('Multiple-Column');
+  const [breadcrumbText, setBreadcrumbText] = useState('Multiple-Column');
 
   useEffect(() => {
     setBreadcrumbText(activeTab);
@@ -16,7 +16,7 @@ const Blog = () => {
 
   const renderContent = () => {
     switch (activeTab) {
-      case 'With-Sidebar':
+      case 'Multiple-Column':
         return (
           <div className="flex justify-center gap-x-8 pt-16">
             <LeftBlog />
@@ -41,7 +41,7 @@ const Blog = () => {
 
       <div className="flex flex-col items-center">
         <ul className="flex gap-x-10 max-w-[500px] mt-10">
-          {['With-Sidebar', 'Single-Column'].map((tab) => (
+          {['Multiple-Column', 'Single-Column'].map((tab) => (
             <li
               key={tab}
               className={`text-base leading-7 font-normal ${activeTab === tab ? 'font-extrabold text-xl transition-all duration-150 text-[#DCCA87]' : 'text-[#aaa]'}`}
